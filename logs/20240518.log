@@ -1,0 +1,605 @@
+2024-05-18 14:51:33,928 - [INFO] - json_service.py[11]: json数据开始处理。。。程序开始执行
+2024-05-18 14:51:33,928 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json/aaa/bbb中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01']
+2024-05-18 14:51:33,928 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json/aaa中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01', 'D:/Python/ETL/json/aaa/x02', 'D:/Python/ETL/json/aaa/x05']
+2024-05-18 14:51:33,928 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01', 'D:/Python/ETL/json/aaa/x02', 'D:/Python/ETL/json/aaa/x05', 'D:/Python/ETL/json/x03']
+2024-05-18 14:51:33,938 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 14:51:33,964 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 14:51:33,966 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 14:51:33,966 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 14:51:33,966 - [INFO] - mysql_util.py[108]: 确认查询file_monitor表是否存在True
+2024-05-18 14:51:33,966 - [INFO] - mysql_util.py[126]: file_monitor已存在，创建表操作进行跳过
+2024-05-18 14:51:33,972 - [INFO] - mysql_util.py[95]: 执行查询语句select processed_file from file_monitor;, 查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',), ('D:/Python/ETL/json/x04',), ('D:/Python/ETL/json/x60',), ('D:/Python/ETL/json/x63',), ('D:/Python/ETL/json/x64',), ('D:/Python/ETL/json/x65',))
+2024-05-18 14:51:33,972 - [INFO] - mysql_util.py[151]: 查询已执行的数据文件，查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',), ('D:/Python/ETL/json/x04',), ('D:/Python/ETL/json/x60',), ('D:/Python/ETL/json/x63',), ('D:/Python/ETL/json/x64',), ('D:/Python/ETL/json/x65',))
+2024-05-18 14:51:33,972 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：[]
+2024-05-18 14:51:33,972 - [INFO] - json_service.py[97]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:52:18,179 - [INFO] - json_service.py[11]: json数据开始处理。。。程序开始执行
+2024-05-18 14:52:18,179 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json/aaa/bbb中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01']
+2024-05-18 14:52:18,179 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json/aaa中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01', 'D:/Python/ETL/json/aaa/x02', 'D:/Python/ETL/json/aaa/x05']
+2024-05-18 14:52:18,179 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01', 'D:/Python/ETL/json/aaa/x02', 'D:/Python/ETL/json/aaa/x05', 'D:/Python/ETL/json/x03']
+2024-05-18 14:52:18,188 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 14:52:18,189 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 14:52:18,191 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 14:52:18,191 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 14:52:18,191 - [INFO] - mysql_util.py[108]: 确认查询file_monitor表是否存在True
+2024-05-18 14:52:18,191 - [INFO] - mysql_util.py[126]: file_monitor已存在，创建表操作进行跳过
+2024-05-18 14:52:18,192 - [INFO] - mysql_util.py[95]: 执行查询语句select processed_file from file_monitor;, 查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',), ('D:/Python/ETL/json/x04',), ('D:/Python/ETL/json/x60',), ('D:/Python/ETL/json/x63',), ('D:/Python/ETL/json/x64',), ('D:/Python/ETL/json/x65',))
+2024-05-18 14:52:18,192 - [INFO] - mysql_util.py[151]: 查询已执行的数据文件，查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',), ('D:/Python/ETL/json/x04',), ('D:/Python/ETL/json/x60',), ('D:/Python/ETL/json/x63',), ('D:/Python/ETL/json/x64',), ('D:/Python/ETL/json/x65',))
+2024-05-18 14:52:18,192 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：[]
+2024-05-18 14:52:18,192 - [INFO] - json_service.py[98]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:52:18,192 - [INFO] - json_service.py[99]: 完成了向MySQL数据库中插入数据的操作。共处理了：0条数据
+2024-05-18 14:52:18,192 - [INFO] - json_service.py[110]: 读取json数据，向mysql中插入以及向csv进行备份，程序完成。。。。
+2024-05-18 14:53:25,879 - [INFO] - json_service.py[11]: json数据开始处理。。。程序开始执行
+2024-05-18 14:53:25,880 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json/aaa/bbb中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01']
+2024-05-18 14:53:25,880 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json/aaa中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01', 'D:/Python/ETL/json/aaa/x02', 'D:/Python/ETL/json/aaa/x05']
+2024-05-18 14:53:25,880 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json中所有文件如下：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01', 'D:/Python/ETL/json/aaa/x02', 'D:/Python/ETL/json/aaa/x05', 'D:/Python/ETL/json/x03']
+2024-05-18 14:53:25,887 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 14:53:25,913 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 14:53:25,915 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('logger_monitor',))
+2024-05-18 14:53:25,915 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('logger_monitor',))
+2024-05-18 14:53:25,915 - [INFO] - mysql_util.py[108]: 确认查询file_monitor表是否存在False
+2024-05-18 14:53:25,954 - [INFO] - mysql_util.py[95]: 执行查询语句select processed_file from file_monitor;, 查询结果()
+2024-05-18 14:53:25,955 - [INFO] - mysql_util.py[151]: 查询已执行的数据文件，查询结果()
+2024-05-18 14:53:25,955 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/Python/ETL/json/aaa/bbb/x00', 'D:/Python/ETL/json/aaa/bbb/x01', 'D:/Python/ETL/json/aaa/x02', 'D:/Python/ETL/json/aaa/x05', 'D:/Python/ETL/json/x03']
+2024-05-18 14:53:26,018 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:53:26,020 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',))
+2024-05-18 14:53:26,020 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',))
+2024-05-18 14:53:26,020 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在False
+2024-05-18 14:53:26,067 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',))
+2024-05-18 14:53:26,067 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',))
+2024-05-18 14:53:26,067 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在False
+2024-05-18 14:53:26,918 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:53:26,920 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:26,920 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:26,920 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 14:53:26,920 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 14:53:26,921 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:26,921 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:26,921 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 14:53:26,922 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 14:53:28,139 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:53:28,140 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:28,140 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:28,140 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 14:53:28,140 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 14:53:28,141 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:28,141 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:28,141 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 14:53:28,141 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 14:53:29,734 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:53:29,736 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:29,736 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:29,736 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 14:53:29,736 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 14:53:29,737 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:29,737 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:29,737 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 14:53:29,737 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 14:53:31,908 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:53:31,910 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:31,910 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:31,910 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 14:53:31,910 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 14:53:31,911 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:31,911 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 14:53:31,911 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 14:53:31,911 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 14:53:34,486 - [INFO] - json_service.py[98]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 14:53:34,486 - [INFO] - json_service.py[99]: 完成了向MySQL数据库中插入数据的操作。共处理了：5120条数据
+2024-05-18 14:53:34,499 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO file_monitor(processed_file, processed_line) VALUES ('D:/Python/ETL/json/aaa/bbb/x00', 1024);
+2024-05-18 14:53:34,501 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO file_monitor(processed_file, processed_line) VALUES ('D:/Python/ETL/json/aaa/bbb/x01', 1024);
+2024-05-18 14:53:34,504 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO file_monitor(processed_file, processed_line) VALUES ('D:/Python/ETL/json/aaa/x02', 1024);
+2024-05-18 14:53:34,505 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO file_monitor(processed_file, processed_line) VALUES ('D:/Python/ETL/json/aaa/x05', 1024);
+2024-05-18 14:53:34,507 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO file_monitor(processed_file, processed_line) VALUES ('D:/Python/ETL/json/x03', 1024);
+2024-05-18 14:53:34,507 - [INFO] - json_service.py[110]: 读取json数据，向mysql中插入以及向csv进行备份，程序完成。。。。
+2024-05-18 15:00:48,963 - [INFO] - json_service.py[11]: json数据开始处理。。。程序开始执行
+2024-05-18 15:00:48,965 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json中所有文件如下：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:00:48,973 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:00:48,975 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:00:48,977 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:00:48,977 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:00:48,977 - [INFO] - mysql_util.py[108]: 确认查询file_monitor表是否存在True
+2024-05-18 15:00:48,977 - [INFO] - mysql_util.py[126]: file_monitor已存在，创建表操作进行跳过
+2024-05-18 15:00:48,977 - [INFO] - mysql_util.py[95]: 执行查询语句select processed_file from file_monitor;, 查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:00:48,977 - [INFO] - mysql_util.py[151]: 查询已执行的数据文件，查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:00:48,977 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:00:49,034 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:00:49,036 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,036 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,036 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:00:49,036 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:00:49,037 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,037 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,037 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:00:49,037 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:00:49,806 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:00:49,807 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,807 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,807 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:00:49,807 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:00:49,808 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,808 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:49,808 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:00:49,808 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:00:51,040 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:00:51,042 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:51,042 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:51,042 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:00:51,042 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:00:51,043 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:51,043 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:51,043 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:00:51,043 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:00:52,784 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:00:52,785 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:52,785 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:52,785 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:00:52,786 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:00:52,787 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:52,787 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:52,787 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:00:52,787 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:00:54,933 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:00:54,934 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:54,934 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:54,934 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:00:54,934 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:00:54,935 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:54,935 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:54,935 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:00:54,935 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:00:57,616 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:00:57,617 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:57,617 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:57,617 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:00:57,618 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:00:57,619 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:57,619 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:00:57,619 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:00:57,619 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:01:00,752 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:01:00,754 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:00,754 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:00,754 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:01:00,754 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:01:00,755 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:00,755 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:00,755 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:01:00,755 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:01:04,387 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:01:04,389 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:04,389 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:04,389 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:01:04,389 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:01:04,390 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:04,390 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:04,390 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:01:04,390 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:01:08,496 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:01:08,498 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:08,498 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:08,498 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:01:08,498 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:01:08,499 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:08,499 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:08,499 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:01:08,499 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:01:13,045 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:01:13,046 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:13,046 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:13,046 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:01:13,046 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:01:13,047 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:13,047 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:13,047 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:01:13,047 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:01:18,072 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:01:18,074 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:18,074 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:18,074 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:01:18,074 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:01:18,075 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:18,075 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:18,075 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:01:18,075 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:01:24,052 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:01:24,054 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:24,054 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:24,054 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:01:24,054 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:01:24,055 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:24,055 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:24,055 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:01:24,056 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:01:30,073 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:01:30,075 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:30,075 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:30,075 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:01:30,075 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:01:30,076 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:30,076 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:01:30,076 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:01:30,076 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:04:25,465 - [INFO] - json_service.py[11]: json数据开始处理。。。程序开始执行
+2024-05-18 15:04:25,467 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json中所有文件如下：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:04:25,475 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:04:25,476 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:04:25,478 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:04:25,478 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:04:25,478 - [INFO] - mysql_util.py[108]: 确认查询file_monitor表是否存在True
+2024-05-18 15:04:25,478 - [INFO] - mysql_util.py[126]: file_monitor已存在，创建表操作进行跳过
+2024-05-18 15:04:25,479 - [INFO] - mysql_util.py[95]: 执行查询语句select processed_file from file_monitor;, 查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:04:25,479 - [INFO] - mysql_util.py[151]: 查询已执行的数据文件，查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:04:25,479 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:04:25,536 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:04:25,538 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:25,539 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:25,539 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:04:25,539 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:04:25,539 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:25,539 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:25,539 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:04:25,539 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:04:26,941 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:04:26,942 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:26,943 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:26,943 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:04:26,943 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:04:26,943 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:26,943 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:26,943 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:04:26,943 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:04:29,596 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:04:29,598 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:29,598 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:29,598 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:04:29,598 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:04:29,599 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:29,599 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:29,599 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:04:29,599 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:04:33,484 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:04:33,486 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:33,486 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:33,486 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:04:33,486 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:04:33,488 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:33,488 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:33,488 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:04:33,488 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:04:38,600 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:04:38,602 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:38,602 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:38,602 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:04:38,602 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:04:38,603 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:38,603 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:38,603 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:04:38,603 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:04:44,852 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:04:44,855 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:44,855 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:44,855 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:04:44,855 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:04:44,856 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:44,856 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:44,856 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:04:44,856 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:04:52,309 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:04:52,310 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:52,310 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:52,311 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:04:52,311 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:04:52,312 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:52,312 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:04:52,312 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:04:52,312 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:05:01,041 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:05:01,043 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:01,043 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:01,043 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:05:01,043 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:05:01,044 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:01,045 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:01,045 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:05:01,045 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:05:10,917 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:05:10,918 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:10,919 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:10,919 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:05:10,919 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:05:10,920 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:10,920 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:10,920 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:05:10,920 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:05:22,060 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:05:22,062 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:22,062 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:22,062 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:05:22,062 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:05:22,063 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:22,063 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:22,063 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:05:22,063 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:05:34,519 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:05:34,521 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:34,521 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:34,521 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:05:34,521 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:05:34,522 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:34,522 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:34,522 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:05:34,522 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:05:48,145 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:05:48,147 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:48,147 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:48,147 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:05:48,148 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:05:48,149 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:48,149 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:05:48,149 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:05:48,149 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:06:02,978 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:06:02,980 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:06:02,980 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:06:02,980 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:06:02,981 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:06:02,982 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:06:02,982 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:06:02,982 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:06:02,982 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:22:31,758 - [INFO] - json_service.py[11]: json数据开始处理。。。程序开始执行
+2024-05-18 15:22:31,759 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json中所有文件如下：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:22:31,768 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:22:31,779 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:22:31,781 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:22:31,781 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:22:31,781 - [INFO] - mysql_util.py[108]: 确认查询file_monitor表是否存在True
+2024-05-18 15:22:31,781 - [INFO] - mysql_util.py[126]: file_monitor已存在，创建表操作进行跳过
+2024-05-18 15:22:31,782 - [INFO] - mysql_util.py[95]: 执行查询语句select processed_file from file_monitor;, 查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:22:31,782 - [INFO] - mysql_util.py[151]: 查询已执行的数据文件，查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:22:31,782 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:22:31,838 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:22:31,840 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:31,840 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:31,840 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:22:31,840 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:22:31,841 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:31,841 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:31,841 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:22:31,841 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:22:33,233 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:22:33,234 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:33,234 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:33,234 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:22:33,234 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:22:33,235 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:33,235 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:33,236 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:22:33,236 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:22:35,876 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:22:35,878 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:35,878 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:35,878 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:22:35,878 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:22:35,879 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:35,879 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:35,879 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:22:35,879 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:22:39,734 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:22:39,736 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:39,736 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:39,736 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:22:39,736 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:22:39,738 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:39,738 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:39,738 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:22:39,738 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:22:44,796 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:22:44,798 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:44,798 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:44,798 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:22:44,798 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:22:44,799 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:44,799 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:44,799 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:22:44,799 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:22:51,119 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:22:51,121 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:51,121 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:51,121 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:22:51,121 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:22:51,122 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:51,122 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:51,122 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:22:51,122 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:22:58,626 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:22:58,628 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:58,628 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:58,628 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:22:58,628 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:22:58,629 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:58,629 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:22:58,630 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:22:58,630 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:23:07,351 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:23:07,353 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:07,353 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:07,353 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:23:07,353 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:23:07,354 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:07,354 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:07,354 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:23:07,354 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:23:17,322 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:23:17,323 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:17,323 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:17,323 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:23:17,323 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:23:17,324 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:17,324 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:17,324 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:23:17,324 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:23:28,512 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:23:28,514 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:28,514 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:28,514 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:23:28,514 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:23:28,515 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:28,515 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:28,515 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:23:28,515 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:23:40,934 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:23:40,936 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:40,936 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:40,936 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:23:40,936 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:23:40,937 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:40,937 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:40,937 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:23:40,937 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:23:54,566 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:23:54,568 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:54,568 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:54,568 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:23:54,568 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:23:54,569 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:54,569 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:23:54,569 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:23:54,569 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:24:09,545 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:24:09,547 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:24:09,547 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:24:09,547 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:24:09,547 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:24:09,549 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:24:09,549 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:24:09,549 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:24:09,549 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:12,511 - [INFO] - json_service.py[11]: json数据开始处理。。。程序开始执行
+2024-05-18 15:28:12,512 - [INFO] - file_service_util.py[35]: 获取D:/Python/ETL/json中所有文件如下：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:28:12,519 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:28:12,541 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-18 15:28:12,543 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:28:12,543 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-18 15:28:12,543 - [INFO] - mysql_util.py[108]: 确认查询file_monitor表是否存在True
+2024-05-18 15:28:12,543 - [INFO] - mysql_util.py[126]: file_monitor已存在，创建表操作进行跳过
+2024-05-18 15:28:12,544 - [INFO] - mysql_util.py[95]: 执行查询语句select processed_file from file_monitor;, 查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:28:12,544 - [INFO] - mysql_util.py[151]: 查询已执行的数据文件，查询结果(('D:/Python/ETL/json/aaa/bbb/x00',), ('D:/Python/ETL/json/aaa/bbb/x01',), ('D:/Python/ETL/json/aaa/x02',), ('D:/Python/ETL/json/aaa/x05',), ('D:/Python/ETL/json/x03',))
+2024-05-18 15:28:12,544 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/Python/ETL/json/x9016', 'D:/Python/ETL/json/x9017', 'D:/Python/ETL/json/x9018', 'D:/Python/ETL/json/x9019', 'D:/Python/ETL/json/x9020', 'D:/Python/ETL/json/x9021', 'D:/Python/ETL/json/x9022', 'D:/Python/ETL/json/x9023', 'D:/Python/ETL/json/x9024', 'D:/Python/ETL/json/x9025', 'D:/Python/ETL/json/x9026', 'D:/Python/ETL/json/x9027', 'D:/Python/ETL/json/x9028', 'D:/Python/ETL/json/x9029', 'D:/Python/ETL/json/x9030', 'D:/Python/ETL/json/x9031', 'D:/Python/ETL/json/x9032', 'D:/Python/ETL/json/x9033', 'D:/Python/ETL/json/x9034', 'D:/Python/ETL/json/x9035', 'D:/Python/ETL/json/x9036', 'D:/Python/ETL/json/x9037', 'D:/Python/ETL/json/x9038', 'D:/Python/ETL/json/x9039', 'D:/Python/ETL/json/x9040', 'D:/Python/ETL/json/x9041', 'D:/Python/ETL/json/x9042', 'D:/Python/ETL/json/x9043', 'D:/Python/ETL/json/x9044', 'D:/Python/ETL/json/x9045', 'D:/Python/ETL/json/x9046', 'D:/Python/ETL/json/x9047', 'D:/Python/ETL/json/x9048', 'D:/Python/ETL/json/x9049', 'D:/Python/ETL/json/x9050', 'D:/Python/ETL/json/x9051', 'D:/Python/ETL/json/x9052', 'D:/Python/ETL/json/x9053', 'D:/Python/ETL/json/x9054', 'D:/Python/ETL/json/x9055', 'D:/Python/ETL/json/x9056', 'D:/Python/ETL/json/x9057', 'D:/Python/ETL/json/x9058', 'D:/Python/ETL/json/x9059', 'D:/Python/ETL/json/x9060', 'D:/Python/ETL/json/x9061', 'D:/Python/ETL/json/x9062', 'D:/Python/ETL/json/x9063', 'D:/Python/ETL/json/x9064', 'D:/Python/ETL/json/x9065', 'D:/Python/ETL/json/x9066', 'D:/Python/ETL/json/x9067', 'D:/Python/ETL/json/x9068', 'D:/Python/ETL/json/x9069', 'D:/Python/ETL/json/x9070', 'D:/Python/ETL/json/x9071', 'D:/Python/ETL/json/x9072', 'D:/Python/ETL/json/x9073', 'D:/Python/ETL/json/x9074', 'D:/Python/ETL/json/x9075', 'D:/Python/ETL/json/x9076', 'D:/Python/ETL/json/x9077', 'D:/Python/ETL/json/x9078', 'D:/Python/ETL/json/x9079', 'D:/Python/ETL/json/x9080', 'D:/Python/ETL/json/x9081', 'D:/Python/ETL/json/x9082', 'D:/Python/ETL/json/x9083', 'D:/Python/ETL/json/x9084', 'D:/Python/ETL/json/x9085', 'D:/Python/ETL/json/x9086', 'D:/Python/ETL/json/x9087', 'D:/Python/ETL/json/x9088', 'D:/Python/ETL/json/x9089', 'D:/Python/ETL/json/x9090', 'D:/Python/ETL/json/x9091', 'D:/Python/ETL/json/x9092', 'D:/Python/ETL/json/x9093', 'D:/Python/ETL/json/x9094', 'D:/Python/ETL/json/x9095', 'D:/Python/ETL/json/x9096', 'D:/Python/ETL/json/x9097', 'D:/Python/ETL/json/x9098', 'D:/Python/ETL/json/x9099', 'D:/Python/ETL/json/x9100', 'D:/Python/ETL/json/x9101', 'D:/Python/ETL/json/x9102', 'D:/Python/ETL/json/x9103', 'D:/Python/ETL/json/x9104', 'D:/Python/ETL/json/x9105', 'D:/Python/ETL/json/x9106', 'D:/Python/ETL/json/x9107', 'D:/Python/ETL/json/x9108', 'D:/Python/ETL/json/x9109', 'D:/Python/ETL/json/x9110', 'D:/Python/ETL/json/x9111', 'D:/Python/ETL/json/x9112', 'D:/Python/ETL/json/x9113', 'D:/Python/ETL/json/x9114', 'D:/Python/ETL/json/x9115', 'D:/Python/ETL/json/x9116', 'D:/Python/ETL/json/x9117', 'D:/Python/ETL/json/x9118', 'D:/Python/ETL/json/x9119', 'D:/Python/ETL/json/x9120', 'D:/Python/ETL/json/x9121', 'D:/Python/ETL/json/x9122', 'D:/Python/ETL/json/x9123', 'D:/Python/ETL/json/x9124', 'D:/Python/ETL/json/x9125', 'D:/Python/ETL/json/x9126', 'D:/Python/ETL/json/x9127', 'D:/Python/ETL/json/x9128', 'D:/Python/ETL/json/x9129', 'D:/Python/ETL/json/x9130', 'D:/Python/ETL/json/x9131', 'D:/Python/ETL/json/x9132', 'D:/Python/ETL/json/x9133', 'D:/Python/ETL/json/x9134', 'D:/Python/ETL/json/x9135', 'D:/Python/ETL/json/x9136', 'D:/Python/ETL/json/x9137', 'D:/Python/ETL/json/x9138', 'D:/Python/ETL/json/x9139', 'D:/Python/ETL/json/x9140', 'D:/Python/ETL/json/x9141', 'D:/Python/ETL/json/x9142', 'D:/Python/ETL/json/x9143', 'D:/Python/ETL/json/x9144', 'D:/Python/ETL/json/x9145', 'D:/Python/ETL/json/x9146', 'D:/Python/ETL/json/x9147', 'D:/Python/ETL/json/x9148', 'D:/Python/ETL/json/x9149', 'D:/Python/ETL/json/x9150', 'D:/Python/ETL/json/x9151', 'D:/Python/ETL/json/x9152', 'D:/Python/ETL/json/x9153', 'D:/Python/ETL/json/x9154', 'D:/Python/ETL/json/x9155', 'D:/Python/ETL/json/x9156', 'D:/Python/ETL/json/x9157', 'D:/Python/ETL/json/x9158', 'D:/Python/ETL/json/x9159', 'D:/Python/ETL/json/x9160', 'D:/Python/ETL/json/x9161', 'D:/Python/ETL/json/x9162', 'D:/Python/ETL/json/x9163', 'D:/Python/ETL/json/x9164', 'D:/Python/ETL/json/x9165', 'D:/Python/ETL/json/x9166', 'D:/Python/ETL/json/x9167', 'D:/Python/ETL/json/x9168', 'D:/Python/ETL/json/x9169', 'D:/Python/ETL/json/x9170', 'D:/Python/ETL/json/x9171', 'D:/Python/ETL/json/x9172', 'D:/Python/ETL/json/x9173', 'D:/Python/ETL/json/x9174', 'D:/Python/ETL/json/x9175', 'D:/Python/ETL/json/x9176', 'D:/Python/ETL/json/x9177', 'D:/Python/ETL/json/x9178', 'D:/Python/ETL/json/x9179', 'D:/Python/ETL/json/x9180', 'D:/Python/ETL/json/x9181', 'D:/Python/ETL/json/x9310', 'D:/Python/ETL/json/x9311', 'D:/Python/ETL/json/x9312', 'D:/Python/ETL/json/x9313', 'D:/Python/ETL/json/x9314', 'D:/Python/ETL/json/x9315', 'D:/Python/ETL/json/x9316', 'D:/Python/ETL/json/x9317', 'D:/Python/ETL/json/x9318', 'D:/Python/ETL/json/x9319', 'D:/Python/ETL/json/x9320', 'D:/Python/ETL/json/x9321', 'D:/Python/ETL/json/x9322', 'D:/Python/ETL/json/x9323', 'D:/Python/ETL/json/x9324', 'D:/Python/ETL/json/x9325', 'D:/Python/ETL/json/x9326', 'D:/Python/ETL/json/x9327', 'D:/Python/ETL/json/x9328', 'D:/Python/ETL/json/x9329', 'D:/Python/ETL/json/x9330', 'D:/Python/ETL/json/x9331', 'D:/Python/ETL/json/x9332']
+2024-05-18 15:28:12,600 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:12,602 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:12,603 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:12,603 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:12,603 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:12,604 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:12,604 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:12,604 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:12,604 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:14,000 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:14,001 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:14,003 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:14,003 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:14,003 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:14,003 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:14,003 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:14,003 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:14,003 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:16,674 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:16,676 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:16,676 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:16,676 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:16,676 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:16,677 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:16,677 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:16,677 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:16,677 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:20,676 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:20,678 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:20,678 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:20,678 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:20,678 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:20,680 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:20,680 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:20,680 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:20,680 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:25,767 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:25,768 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:25,768 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:25,768 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:25,769 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:25,770 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:25,770 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:25,770 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:25,770 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:32,108 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:32,110 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:32,111 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:32,111 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:32,111 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:32,111 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:32,111 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:32,112 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:32,112 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:39,727 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:39,728 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:39,729 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:39,729 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:39,729 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:39,730 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:39,730 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:39,730 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:39,730 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:48,592 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:48,594 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:48,594 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:48,594 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:48,594 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:48,595 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:48,595 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:48,595 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:48,595 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:28:58,662 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:28:58,664 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:58,664 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:58,664 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:28:58,664 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:28:58,665 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:58,665 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:28:58,665 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:28:58,665 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:29:10,074 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:29:10,076 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:10,076 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:10,076 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:29:10,076 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:29:10,077 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:10,077 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:10,077 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:29:10,077 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:29:22,743 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:29:22,745 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:22,745 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:22,745 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:29:22,745 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:29:22,746 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:22,746 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:22,746 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:29:22,746 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:29:36,628 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:29:36,629 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:36,629 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:36,629 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:29:36,629 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:29:36,631 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:36,631 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:36,631 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:29:36,631 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过
+2024-05-18 15:29:51,746 - [INFO] - json_service.py[73]: 完成了CSV备份文件的写出，写出到了：D:/Python/ETL/csv/
+2024-05-18 15:29:51,746 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:51,746 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:51,746 - [INFO] - mysql_util.py[108]: 确认查询orders表是否存在True
+2024-05-18 15:29:51,746 - [INFO] - mysql_util.py[126]: orders已存在，创建表操作进行跳过
+2024-05-18 15:29:51,748 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:51,748 - [INFO] - mysql_util.py[107]: retail中的表有(('backend_logs',), ('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-18 15:29:51,748 - [INFO] - mysql_util.py[108]: 确认查询orders_detail表是否存在True
+2024-05-18 15:29:51,748 - [INFO] - mysql_util.py[126]: orders_detail已存在，创建表操作进行跳过

@@ -1,0 +1,246 @@
+2024-05-17 15:04:29,911 - [INFO] - logger_service.py[20]: json数据开始处理。。。程序开始执行
+2024-05-17 15:04:29,911 - [INFO] - file_service_util.py[35]: 获取D:/PycharmProjects/pythonProjectETL/logs/logging中所有文件如下：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:04:29,919 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:04:29,921 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:04:29,923 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-17 15:04:29,923 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-17 15:04:29,923 - [INFO] - mysql_util.py[108]: 确认查询logger_monitor表是否存在True
+2024-05-17 15:04:29,923 - [INFO] - mysql_util.py[126]: logger_monitor已存在，创建表操作进行跳过
+2024-05-17 15:04:29,925 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:04:29,925 - [INFO] - mysql_util.py[107]: retail中的表有(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:04:29,925 - [INFO] - mysql_util.py[108]: 确认查询logger_service表是否存在False
+2024-05-17 15:04:30,030 - [INFO] - mysql_util.py[95]: 执行查询语句SELECT processed_file FROM logger_monitor;, 查询结果()
+2024-05-17 15:04:30,030 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:04:33,559 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 5120)
+2024-05-17 15:04:33,561 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 5120)
+2024-05-17 15:04:33,563 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 5120)
+2024-05-17 15:04:33,565 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 5120)
+2024-05-17 15:04:33,566 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log', 5120)
+2024-05-17 15:04:33,567 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:04:33,567 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:07:03,823 - [INFO] - logger_service.py[20]: json数据开始处理。。。程序开始执行
+2024-05-17 15:07:03,823 - [INFO] - file_service_util.py[35]: 获取D:/PycharmProjects/pythonProjectETL/logs/logging中所有文件如下：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:07:03,823 - [INFO] - logger_service.py[23]: 读取用户提供路径下的文件夹：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:07:03,832 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:07:03,834 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:07:03,835 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-17 15:07:03,835 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',), ('logger_monitor',))
+2024-05-17 15:07:03,835 - [INFO] - mysql_util.py[108]: 确认查询logger_monitor表是否存在True
+2024-05-17 15:07:03,835 - [INFO] - mysql_util.py[126]: logger_monitor已存在，创建表操作进行跳过
+2024-05-17 15:07:03,836 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-17 15:07:03,836 - [INFO] - mysql_util.py[107]: retail中的表有(('barcode',), ('logger_service',), ('orders',), ('orders_detail',))
+2024-05-17 15:07:03,836 - [INFO] - mysql_util.py[108]: 确认查询logger_service表是否存在True
+2024-05-17 15:07:03,836 - [INFO] - mysql_util.py[126]: logger_service已存在，创建表操作进行跳过
+2024-05-17 15:07:03,836 - [INFO] - mysql_util.py[95]: 执行查询语句SELECT processed_file FROM logger_monitor;, 查询结果(('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log',))
+2024-05-17 15:07:03,837 - [INFO] - logger_service.py[45]: 获取已执行过的文件(('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log',), ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log',))
+2024-05-17 15:07:03,837 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：[]
+2024-05-17 15:07:03,837 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:07:03,837 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:37:38,139 - [INFO] - logger_service.py[20]: json数据开始处理。。。程序开始执行
+2024-05-17 15:37:38,139 - [INFO] - file_service_util.py[35]: 获取D:/PycharmProjects/pythonProjectETL/logs/logging中所有文件如下：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:37:38,139 - [INFO] - logger_service.py[23]: 读取用户提供路径下的文件夹：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:37:38,147 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:37:38,149 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:37:38,151 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:37:38,151 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:37:38,151 - [INFO] - mysql_util.py[108]: 确认查询logger_monitor表是否存在False
+2024-05-17 15:37:38,208 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:37:38,208 - [INFO] - mysql_util.py[107]: retail中的表有(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:37:38,208 - [INFO] - mysql_util.py[108]: 确认查询logger_service表是否存在False
+2024-05-17 15:37:38,236 - [INFO] - mysql_util.py[95]: 执行查询语句SELECT processed_file FROM logger_monitor;, 查询结果()
+2024-05-17 15:37:38,237 - [INFO] - logger_service.py[45]: 获取已执行过的文件()
+2024-05-17 15:37:38,237 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:37:38,237 - [INFO] - logger_service.py[58]: 得到为执行过文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:37:38,507 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:37:38,516 - [INFO] - logger_service.py[99]: 已完成1000条数据备份
+2024-05-17 15:37:38,764 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:37:39,002 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:37:39,017 - [INFO] - logger_service.py[99]: 已完成1000条数据备份
+2024-05-17 15:37:39,018 - [INFO] - logger_service.py[99]: 已完成2000条数据备份
+2024-05-17 15:37:39,357 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:37:39,608 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:37:39,841 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:37:39,862 - [INFO] - logger_service.py[99]: 已完成1000条数据备份
+2024-05-17 15:37:39,863 - [INFO] - logger_service.py[99]: 已完成2000条数据备份
+2024-05-17 15:37:39,864 - [INFO] - logger_service.py[99]: 已完成3000条数据备份
+2024-05-17 15:37:40,098 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:37:40,349 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:37:40,589 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:37:40,835 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:37:40,862 - [INFO] - logger_service.py[99]: 已完成1000条数据备份
+2024-05-17 15:37:40,863 - [INFO] - logger_service.py[99]: 已完成2000条数据备份
+2024-05-17 15:37:40,864 - [INFO] - logger_service.py[99]: 已完成3000条数据备份
+2024-05-17 15:37:40,866 - [INFO] - logger_service.py[99]: 已完成4000条数据备份
+2024-05-17 15:37:41,135 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:37:41,405 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:37:41,653 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:37:41,888 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:37:42,125 - [INFO] - logger_service.py[86]: 已完成5000条数据插入
+2024-05-17 15:37:42,156 - [INFO] - logger_service.py[99]: 已完成1000条数据备份
+2024-05-17 15:37:42,157 - [INFO] - logger_service.py[99]: 已完成2000条数据备份
+2024-05-17 15:37:42,159 - [INFO] - logger_service.py[99]: 已完成3000条数据备份
+2024-05-17 15:37:42,160 - [INFO] - logger_service.py[99]: 已完成4000条数据备份
+2024-05-17 15:37:42,161 - [INFO] - logger_service.py[99]: 已完成5000条数据备份
+2024-05-17 15:37:42,175 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 5120)
+2024-05-17 15:37:42,177 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 5120)
+2024-05-17 15:37:42,179 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 5120)
+2024-05-17 15:37:42,180 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 5120)
+2024-05-17 15:37:42,182 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log', 5120)
+2024-05-17 15:37:42,182 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:37:42,182 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:39:00,554 - [INFO] - logger_service.py[20]: json数据开始处理。。。程序开始执行
+2024-05-17 15:39:00,555 - [INFO] - file_service_util.py[35]: 获取D:/PycharmProjects/pythonProjectETL/logs/logging中所有文件如下：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:00,555 - [INFO] - logger_service.py[23]: 读取用户提供路径下的文件夹：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:00,562 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:39:00,579 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:39:00,581 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:39:00,581 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:39:00,581 - [INFO] - mysql_util.py[108]: 确认查询logger_monitor表是否存在False
+2024-05-17 15:39:00,624 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:39:00,624 - [INFO] - mysql_util.py[107]: retail中的表有(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:39:00,624 - [INFO] - mysql_util.py[108]: 确认查询logger_service表是否存在False
+2024-05-17 15:39:00,692 - [INFO] - mysql_util.py[95]: 执行查询语句SELECT processed_file FROM logger_monitor;, 查询结果()
+2024-05-17 15:39:00,693 - [INFO] - logger_service.py[45]: 获取已执行过的文件()
+2024-05-17 15:39:00,693 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:00,693 - [INFO] - logger_service.py[58]: 得到为执行过文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:00,961 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:00,976 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:01,223 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:01,474 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:01,489 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:01,490 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:01,756 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:02,002 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:02,236 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:39:02,258 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:02,260 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:02,262 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:39:02,510 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:02,744 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:02,997 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:39:03,230 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:39:03,257 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:03,258 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:03,259 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:39:03,260 - [INFO] - logger_service.py[100]: 已完成4000条数据备份
+2024-05-17 15:39:03,503 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:03,744 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:03,985 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:39:04,220 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:39:04,448 - [INFO] - logger_service.py[86]: 已完成5000条数据插入
+2024-05-17 15:39:04,479 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:04,482 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:04,484 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:39:04,486 - [INFO] - logger_service.py[100]: 已完成4000条数据备份
+2024-05-17 15:39:04,488 - [INFO] - logger_service.py[100]: 已完成5000条数据备份
+2024-05-17 15:39:04,498 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 5120)
+2024-05-17 15:39:04,500 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 5120)
+2024-05-17 15:39:04,503 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 5120)
+2024-05-17 15:39:04,505 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 5120)
+2024-05-17 15:39:04,507 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log', 5120)
+2024-05-17 15:39:04,507 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:39:04,507 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:39:50,519 - [INFO] - logger_service.py[20]: json数据开始处理。。。程序开始执行
+2024-05-17 15:39:50,519 - [INFO] - file_service_util.py[35]: 获取D:/PycharmProjects/pythonProjectETL/logs/logging中所有文件如下：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:50,519 - [INFO] - logger_service.py[23]: 读取用户提供路径下的文件夹：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:50,526 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:39:50,528 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:39:50,529 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:39:50,529 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:39:50,529 - [INFO] - mysql_util.py[108]: 确认查询logger_monitor表是否存在False
+2024-05-17 15:39:50,564 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:39:50,564 - [INFO] - mysql_util.py[107]: retail中的表有(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:39:50,564 - [INFO] - mysql_util.py[108]: 确认查询logger_service表是否存在False
+2024-05-17 15:39:50,593 - [INFO] - mysql_util.py[95]: 执行查询语句SELECT processed_file FROM logger_monitor;, 查询结果()
+2024-05-17 15:39:50,593 - [INFO] - logger_service.py[45]: 获取已执行过的文件()
+2024-05-17 15:39:50,593 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:50,593 - [INFO] - logger_service.py[58]: 得到为执行过文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:39:50,862 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:50,874 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:51,123 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:51,374 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:51,392 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:51,393 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:51,659 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:51,902 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:52,153 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:39:52,175 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:52,176 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:52,177 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:39:52,421 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:52,670 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:52,908 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:39:53,146 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:39:53,175 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:53,176 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:53,177 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:39:53,178 - [INFO] - logger_service.py[100]: 已完成4000条数据备份
+2024-05-17 15:39:53,420 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:39:53,672 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:39:53,910 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:39:54,145 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:39:54,382 - [INFO] - logger_service.py[86]: 已完成5000条数据插入
+2024-05-17 15:39:54,411 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:39:54,412 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:39:54,413 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:39:54,414 - [INFO] - logger_service.py[100]: 已完成4000条数据备份
+2024-05-17 15:39:54,415 - [INFO] - logger_service.py[100]: 已完成5000条数据备份
+2024-05-17 15:39:54,423 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 1024)
+2024-05-17 15:39:54,425 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 2048)
+2024-05-17 15:39:54,427 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 3072)
+2024-05-17 15:39:54,429 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 4096)
+2024-05-17 15:39:54,431 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log', 5120)
+2024-05-17 15:39:54,431 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:39:54,431 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:43:39,941 - [INFO] - logger_service.py[20]: json数据开始处理。。。程序开始执行
+2024-05-17 15:43:39,941 - [INFO] - file_service_util.py[35]: 获取D:/PycharmProjects/pythonProjectETL/logs/logging中所有文件如下：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:43:39,941 - [INFO] - logger_service.py[23]: 读取用户提供路径下的文件夹：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:43:39,964 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:43:39,966 - [INFO] - mysql_util.py[37]: 构建数据库localhost：3306的连接成功
+2024-05-17 15:43:39,967 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:43:39,967 - [INFO] - mysql_util.py[107]: metadata中的表有(('barcode_monitor',), ('file_monitor',))
+2024-05-17 15:43:39,967 - [INFO] - mysql_util.py[108]: 确认查询logger_monitor表是否存在False
+2024-05-17 15:43:40,006 - [INFO] - mysql_util.py[95]: 执行查询语句SHOW TABLES;, 查询结果(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:43:40,006 - [INFO] - mysql_util.py[107]: retail中的表有(('barcode',), ('orders',), ('orders_detail',))
+2024-05-17 15:43:40,006 - [INFO] - mysql_util.py[108]: 确认查询logger_service表是否存在False
+2024-05-17 15:43:40,034 - [INFO] - mysql_util.py[95]: 执行查询语句SELECT processed_file FROM logger_monitor;, 查询结果()
+2024-05-17 15:43:40,035 - [INFO] - logger_service.py[45]: 获取已执行过的文件()
+2024-05-17 15:43:40,035 - [INFO] - file_service_util.py[52]: 获取需要执行的文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:43:40,035 - [INFO] - logger_service.py[58]: 得到为执行过文件：['D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 'D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log']
+2024-05-17 15:43:40,316 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:43:40,330 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:43:40,569 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:43:40,805 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:43:40,820 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:43:40,821 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:43:41,056 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:43:41,277 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:43:41,497 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:43:41,516 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:43:41,517 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:43:41,518 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:43:41,744 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:43:41,963 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:43:42,184 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:43:42,399 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:43:42,424 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:43:42,425 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:43:42,426 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:43:42,427 - [INFO] - logger_service.py[100]: 已完成4000条数据备份
+2024-05-17 15:43:42,648 - [INFO] - logger_service.py[86]: 已完成1000条数据插入
+2024-05-17 15:43:42,867 - [INFO] - logger_service.py[86]: 已完成2000条数据插入
+2024-05-17 15:43:43,098 - [INFO] - logger_service.py[86]: 已完成3000条数据插入
+2024-05-17 15:43:43,316 - [INFO] - logger_service.py[86]: 已完成4000条数据插入
+2024-05-17 15:43:43,557 - [INFO] - logger_service.py[86]: 已完成5000条数据插入
+2024-05-17 15:43:43,587 - [INFO] - logger_service.py[100]: 已完成1000条数据备份
+2024-05-17 15:43:43,588 - [INFO] - logger_service.py[100]: 已完成2000条数据备份
+2024-05-17 15:43:43,589 - [INFO] - logger_service.py[100]: 已完成3000条数据备份
+2024-05-17 15:43:43,590 - [INFO] - logger_service.py[100]: 已完成4000条数据备份
+2024-05-17 15:43:43,592 - [INFO] - logger_service.py[100]: 已完成5000条数据备份
+2024-05-17 15:43:43,597 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-09.log', 1024)
+2024-05-17 15:43:43,599 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-10.log', 1024)
+2024-05-17 15:43:43,601 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-11.log', 1024)
+2024-05-17 15:43:43,602 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-12.log', 1024)
+2024-05-17 15:43:43,604 - [INFO] - mysql_util.py[52]: 执行sql语句INSERT INTO logger_monitor(processed_file, processed_line) VALUES ('D:/PycharmProjects/pythonProjectETL/logs/logging/2024-05-17-11-01-13.log', 1024)
+2024-05-17 15:43:43,604 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
+2024-05-17 15:43:43,604 - [INFO] - mysql_util.py[73]: 关闭数据库连接成功
